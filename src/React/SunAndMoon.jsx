@@ -20,6 +20,7 @@ const SunAndMoon = () => {
                 alt='The Sun and Moon'
                 onMouseOver={ imageOver }
                 onMouseOut={ imageOut }
+               
             />
         </div>
     )
