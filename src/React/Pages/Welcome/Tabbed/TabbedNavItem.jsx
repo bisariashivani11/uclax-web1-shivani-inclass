@@ -43,11 +43,9 @@ const TabbedNavItemStyled = styled.div`
 
     &:hover {
         background-color: #032d2d
-
+    }
     &.active {
         background-color: teal;
-
-
     }
 
 `;
