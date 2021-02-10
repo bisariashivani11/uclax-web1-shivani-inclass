@@ -6,22 +6,30 @@ import styled from 'styled-components';
 
 /* Scripts ---------------------------*/
 import { mq } from '../common/media_queries.js';
+import useMediaQuery from '../common/useMediaQuery.js';
 
 /* Components ---------------------------*/
 import Header from './Header.jsx';
-import Nav from './Nav.jsx';
+import NavMobile from './Nav/NavMobile.jsx';
+import NavLarge from './Nav/NavLarge.jsx';
 import Main from './Main.jsx'
 import Footer from './Footer.jsx';
 
 
 const Container = () => {
 
+    const { isSmall } = useMediaQuery();
+
     return (
         <BrowserRouter>
             <ContainerStyled className='Container'>
-            
-                <Header />
-                <Nav />
+                 <Header />
+                    {
+                        isSmall
+                        ? <NavMobile />
+                        : <NavLarge />
+                    }
+                    
                 <Main />
                 <Footer />
             </ContainerStyled>
