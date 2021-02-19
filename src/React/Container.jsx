@@ -23,7 +23,7 @@ const Container = () => {
     return (
         <BrowserRouter>
             <ContainerStyled className='Container'>
-                 <Header />
+                <Header />
                     {
                         isSmall
                         ? <NavMobile />
