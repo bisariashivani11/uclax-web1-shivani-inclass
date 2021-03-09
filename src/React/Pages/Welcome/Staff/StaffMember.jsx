@@ -23,7 +23,7 @@ const StaffMember = ({member}) => {
     return (
         <StaffMemberStyled className='StaffMember'>
            <div onClick={ handleOnShow }>
-                <img src={ member.image } />
+                <img src={ member.image } alt={ member.name } />
                 <h3>{ member.name }</h3>
             </div> 
 
